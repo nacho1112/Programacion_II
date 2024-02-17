@@ -17,7 +17,7 @@ for(let i = 0; i < cantidad_productos; i++){
     const costo_flete = volumen * 100; // $100 por centímetro
     let impuesto = 0;
 
-    if (volumen < 10000) {
+    if (volumen > 1000 && volumen <= 10000) {
         impuesto = costo_flete * 0.1; // 10% de impuesto
     } else {
         impuesto = costo_flete * 0.2; // 20% de impuesto
